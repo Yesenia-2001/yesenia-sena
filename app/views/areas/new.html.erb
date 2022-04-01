@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="application.css">
+<form action="" method="post">
+<body class="fondo">
+    <p class= "boton">
+      <%= link_to "Regresar", areas_path, :method => :get %>
+    </p>
+  <div class="formu-area">
+        <h2>Crear nueva area</h2>
+        <label for="name">Nombre area:</label><br>
+          <input type="text" id="name" name="name">
+      <div>
+        <%= link_to "Guardar", areas_path, :method => :get %>
+      </div>
+      <div class="derecha"></div>
+  </div>
+  </body>
+</form>

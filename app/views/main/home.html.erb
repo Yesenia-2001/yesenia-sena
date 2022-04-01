@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="application.css">
+<body class="fondo">
+    <h1></h1>
+    <p class= "boton">
+        <%= link_to "Cerrar sesión", destroy_user_session_path, :method => :delete %>
+    </p>
+    <nav class="opciones">
+        <li class= "lista"><%= link_to "Areas", areas_path, :method => :get %></li>     
+    </nav>
+    <div class= "izquierda"></div>
+</body>
+
+
+

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="application.css">
+<body class="fondo">
+    <h1></h1>
+    <p class= "boton">
+        <%= link_to "Regresar", root_path, :method => :get %>
+    </p>
+    <nav class="opciones2">
+            <li class= "lista2"><%= link_to "Crear nueva area", new_area_path, :method => :get %></li>   
+    </nav>
+    <div class="contenedor-area">
+        <div class="areas">
+            <h2>Areas</h2>
+        </div>   
+        <div class="areas2">
+            <table border="1" class="tabla">
+                <tr> 
+                    <td><%= render @areas %></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
